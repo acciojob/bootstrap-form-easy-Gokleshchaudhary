@@ -10,7 +10,7 @@
 
 <div class="container">
     <h2>Intern Application Form</h2>
-    <form id="intern-form">
+    <form id="intern-form" novalidate>
         <div class="form-group">
             <label for="first-name-input">First Name</label>
             <input type="text" class="form-control" id="first-name-input" required>
@@ -67,9 +67,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    // Example of form validation
     (function () {
-        'use strict'
+        'use strict';
         window.addEventListener('load', function () {
             var form = document.getElementById('intern-form');
             form.addEventListener('submit', function (event) {
